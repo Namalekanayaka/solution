@@ -178,9 +178,9 @@ const ResultCard = ({ score, totalQuestions }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="bg-wellness-teal-50 border-l-4 border-wellness-teal-500 p-4 rounded"
+                className="bg-primary-50 border-l-4 border-primary-500 p-4 rounded"
             >
-                <p className="text-sm text-wellness-teal-800">
+                <p className="text-sm text-primary-800">
                     <strong>Important:</strong> This assessment is not a diagnostic tool. It's designed to help you
                     understand your current mental state. Please consult with a qualified mental health professional
                     for proper diagnosis and treatment.

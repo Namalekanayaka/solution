@@ -181,7 +181,7 @@ const Quiz = () => {
                             onClick={handleNext}
                             disabled={!isAnswered}
                             className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${isAnswered
-                                ? 'bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600 text-white hover:shadow-lg'
+                                ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:shadow-lg'
                                 : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                                 }`}
                         >

@@ -48,18 +48,12 @@ const Home = () => {
     return (
         <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-wellness-teal-50 via-wellness-sky-light to-wellness-blue-50 py-20 md:py-32">
-                <div className="absolute inset-0 overflow-hidden opacity-40">
-                    <img
-                        src="/api/placeholder/1920/1080"
-                        alt="Peaceful sky background"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+            <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-gray-50 py-24 md:py-32">
+
 
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute -top-40 -right-40 w-80 h-80 bg-wellness-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
-                    <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-wellness-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+                    <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-coral rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,29 +61,29 @@ const Home = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-center"
+                        className="text-center max-w-4xl mx-auto"
                     >
                         <motion.div
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-                            className="inline-block mb-6"
+                            className="inline-block mb-8"
                         >
-                            <div className="w-20 h-20 bg-gradient-to-br from-wellness-teal-500 to-wellness-teal-600 rounded-2xl flex items-center justify-center shadow-xl">
-                                <span className="text-4xl">🧠</span>
+                            <div className="w-24 h-24 bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center shadow-2xl">
+                                <span className="text-5xl">🧠</span>
                             </div>
                         </motion.div>
 
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            <span className="gradient-text">MindCheck</span>
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
+                            You deserve to <span className="gradient-text">feel better</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto font-medium">
-                            Your Mental Wellness Journey
+                        <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto font-medium leading-relaxed">
+                            Professional mental health support when you need it
                         </p>
 
-                        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                            Take the first step towards understanding and improving your mental health
+                        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                            Take the first step towards understanding and improving your mental wellness with our confidential assessment
                         </p>
 
                         <motion.div
@@ -100,19 +94,47 @@ const Home = () => {
                         >
                             <button
                                 onClick={() => navigate('/quiz')}
-                                className="btn-primary text-lg px-8 py-4 group"
+                                className="btn-primary text-lg group"
                             >
-                                Start Assessment
+                                Start Your Journey
                                 <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
                             </button>
                             <button
                                 onClick={() => navigate('/resources')}
-                                className="btn-secondary text-lg px-8 py-4"
+                                className="btn-secondary text-lg"
                             >
                                 View Resources
                             </button>
+                        </motion.div>
+
+                        {/* Trust Indicators */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.6 }}
+                            className="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-600"
+                        >
+                            <div className="flex items-center space-x-2">
+                                <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                                <span>Confidential & Private</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                    <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                                <span>Evidence-Based</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                                </svg>
+                                <span>Available 24/7</span>
+                            </div>
                         </motion.div>
                     </motion.div>
                 </div>
@@ -181,7 +203,7 @@ const Home = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600">
+            <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -190,16 +212,16 @@ const Home = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Ready to Take Control of Your Mental Health?
+                            Ready to start feeling better?
                         </h2>
-                        <p className="text-xl text-wellness-teal-50 mb-8">
-                            Start your journey towards better mental wellness today
+                        <p className="text-xl text-primary-50 mb-8">
+                            Take the first step towards better mental wellness today
                         </p>
                         <button
                             onClick={() => navigate('/quiz')}
-                            className="bg-white text-wellness-teal-600 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200"
+                            className="bg-white text-primary-700 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200 hover:bg-gray-50"
                         >
-                            Begin Assessment Now
+                            Begin Your Assessment
                         </button>
                     </motion.div>
                 </div>

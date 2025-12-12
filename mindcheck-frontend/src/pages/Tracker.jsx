@@ -75,8 +75,8 @@ const Tracker = () => {
                         <button
                             onClick={() => setActiveTab('quiz')}
                             className={`px-6 py-2 rounded-lg font-semibold transition-all duration-200 ${activeTab === 'quiz'
-                                ? 'bg-white text-wellness-teal-600 shadow-md'
-                                : 'text-gray-600 hover:text-wellness-teal-600'
+                                ? 'bg-white text-primary-600 shadow-md'
+                                : 'text-gray-600 hover:text-primary-600'
                                 }`}
                         >
                             Quiz History
@@ -84,8 +84,8 @@ const Tracker = () => {
                         <button
                             onClick={() => setActiveTab('mood')}
                             className={`px-6 py-2 rounded-lg font-semibold transition-all duration-200 ${activeTab === 'mood'
-                                ? 'bg-white text-wellness-teal-600 shadow-md'
-                                : 'text-gray-600 hover:text-wellness-teal-600'
+                                ? 'bg-white text-primary-600 shadow-md'
+                                : 'text-gray-600 hover:text-primary-600'
                                 }`}
                         >
                             Daily Mood

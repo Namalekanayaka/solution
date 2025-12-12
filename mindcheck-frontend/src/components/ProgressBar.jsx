@@ -9,7 +9,7 @@ const ProgressBar = ({ current, total }) => {
                 <span className="text-sm font-semibold text-gray-600">
                     Progress
                 </span>
-                <span className="text-sm font-semibold text-wellness-teal-600">
+                <span className="text-sm font-semibold text-primary-600">
                     {current} / {total}
                 </span>
             </div>
@@ -19,7 +19,7 @@ const ProgressBar = ({ current, total }) => {
                     initial={{ width: 0 }}
                     animate={{ width: `${percentage}%` }}
                     transition={{ duration: 0.5, ease: 'easeOut' }}
-                    className="h-full bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600 rounded-full"
+                    className="h-full bg-gradient-to-r from-primary-500 to-primary-600 rounded-full"
                 />
             </div>
 

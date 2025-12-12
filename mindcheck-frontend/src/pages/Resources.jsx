@@ -31,11 +31,11 @@ const Resources = () => {
             case 'Emergency Hotlines':
                 return 'from-red-500 to-pink-500';
             case 'Online Resources':
-                return 'from-wellness-teal-500 to-wellness-teal-600';
+                return 'from-primary-500 to-primary-600';
             case 'Self-Help Tools':
                 return 'from-green-500 to-emerald-500';
             case 'Professional Help':
-                return 'from-wellness-blue-500 to-wellness-blue-600';
+                return 'from-primary-500 to-primary-600';
             default:
                 return 'from-gray-500 to-slate-500';
         }
@@ -136,7 +136,7 @@ const Resources = () => {
                             key={category}
                             onClick={() => setFilter(category)}
                             className={`px-6 py-2 rounded-full font-semibold transition-all duration-200 ${filter === category
-                                ? 'bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600 text-white shadow-lg'
+                                ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
                                 : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-300'
                                 }`}
                         >
@@ -222,9 +222,9 @@ const Resources = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
-                    className="mt-12 bg-wellness-teal-50 border-l-4 border-wellness-teal-500 p-6 rounded"
+                    className="mt-12 bg-primary-50 border-l-4 border-primary-500 p-6 rounded"
                 >
-                    <p className="text-sm text-wellness-teal-800">
+                    <p className="text-sm text-primary-800">
                         <strong>Note:</strong> These resources are provided for informational purposes only.
                         MindCheck does not endorse or guarantee the services of any listed organization.
                         Always consult with qualified healthcare professionals for medical advice.

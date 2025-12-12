@@ -7,36 +7,23 @@ export default {
     theme: {
         extend: {
             colors: {
-                wellness: {
-                    teal: {
-                        50: '#f0fdfa',
-                        100: '#ccfbf1',
-                        200: '#99f6e4',
-                        300: '#5eead4',
-                        400: '#2dd4bf',
-                        500: '#14b8a6',
-                        600: '#0d9488',
-                        700: '#0f766e',
-                        800: '#115e59',
-                        900: '#134e4a',
-                    },
-                    blue: {
-                        50: '#eff6ff',
-                        100: '#dbeafe',
-                        200: '#bfdbfe',
-                        300: '#93c5fd',
-                        400: '#60a5fa',
-                        500: '#3b82f6',
-                        600: '#2563eb',
-                        700: '#1d4ed8',
-                        800: '#1e40af',
-                        900: '#1e3a8a',
-                    },
-                    sky: {
-                        light: '#E8F4F8',
-                        DEFAULT: '#B8D8E8',
-                        dark: '#7FB3D5',
-                    }
+                primary: {
+                    50: '#e0f2f1',
+                    100: '#b2dfdb',
+                    200: '#80cbc4',
+                    300: '#4db6ac',
+                    400: '#26a69a',
+                    500: '#009688',
+                    600: '#00897b',
+                    700: '#00796b',
+                    800: '#00695c',
+                    900: '#004d40',
+                },
+                accent: {
+                    warm: '#ff6f61',
+                    coral: '#ff8a80',
+                    success: '#4caf50',
+                    warning: '#ff9800',
                 },
                 mental: {
                     calm: '#10b981',
