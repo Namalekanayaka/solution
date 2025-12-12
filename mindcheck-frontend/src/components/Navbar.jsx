@@ -27,7 +27,7 @@ const Navbar = () => {
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-2"
                         >
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <div className="w-10 h-10 bg-gradient-to-br from-wellness-teal-500 to-wellness-teal-600 rounded-xl flex items-center justify-center">
                                 <span className="text-white font-bold text-xl">M</span>
                             </div>
                             <span className="text-2xl font-bold gradient-text">MindCheck</span>
@@ -44,8 +44,8 @@ const Navbar = () => {
                             >
                                 <span
                                     className={`${isActive(link.path)
-                                            ? 'text-blue-600 font-semibold'
-                                            : 'text-gray-600 hover:text-blue-600'
+                                        ? 'text-wellness-teal-600 font-semibold'
+                                        : 'text-gray-600 hover:text-wellness-teal-600'
                                         }`}
                                 >
                                     {link.label}
@@ -53,7 +53,7 @@ const Navbar = () => {
                                 {isActive(link.path) && (
                                     <motion.div
                                         layoutId="navbar-indicator"
-                                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600"
+                                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600"
                                         initial={false}
                                         transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                                     />
@@ -66,7 +66,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-600 hover:text-blue-600 focus:outline-none"
+                            className="text-gray-600 hover:text-wellness-teal-600 focus:outline-none"
                             aria-label="Toggle menu"
                         >
                             <svg
@@ -101,8 +101,8 @@ const Navbar = () => {
                                 to={link.path}
                                 onClick={() => setIsOpen(false)}
                                 className={`block px-4 py-2 rounded-lg transition-colors duration-200 ${isActive(link.path)
-                                        ? 'bg-blue-50 text-blue-600 font-semibold'
-                                        : 'text-gray-600 hover:bg-gray-50 hover:text-blue-600'
+                                    ? 'bg-wellness-teal-50 text-wellness-teal-600 font-semibold'
+                                    : 'text-gray-600 hover:bg-gray-50 hover:text-wellness-teal-600'
                                     }`}
                             >
                                 {link.label}

@@ -12,7 +12,7 @@ const QuestionCard = ({ question, selectedValue, onSelect, questionNumber, total
             {/* Question Header */}
             <div className="mb-6">
                 <div className="flex justify-between items-center mb-4">
-                    <span className="text-sm font-semibold text-blue-600">
+                    <span className="text-sm font-semibold text-wellness-teal-600">
                         Question {questionNumber} of {totalQuestions}
                     </span>
                     <span className="text-xs text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
@@ -33,16 +33,16 @@ const QuestionCard = ({ question, selectedValue, onSelect, questionNumber, total
                         whileTap={{ scale: 0.98 }}
                         onClick={() => onSelect(option.value)}
                         className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-200 ${selectedValue === option.value
-                                ? 'border-blue-500 bg-blue-50 shadow-md'
-                                : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'
+                            ? 'border-wellness-teal-500 bg-wellness-teal-50 shadow-md'
+                            : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
                             }`}
                         aria-label={`Option ${index + 1}: ${option.text}`}
                     >
                         <div className="flex items-center space-x-3">
                             <div
                                 className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${selectedValue === option.value
-                                        ? 'border-blue-500 bg-blue-500'
-                                        : 'border-gray-300'
+                                    ? 'border-wellness-teal-500 bg-wellness-teal-500'
+                                    : 'border-gray-300'
                                     }`}
                             >
                                 {selectedValue === option.value && (
@@ -55,8 +55,8 @@ const QuestionCard = ({ question, selectedValue, onSelect, questionNumber, total
                             </div>
                             <span
                                 className={`text-base md:text-lg ${selectedValue === option.value
-                                        ? 'text-blue-700 font-semibold'
-                                        : 'text-gray-700'
+                                    ? 'text-blue-700 font-semibold'
+                                    : 'text-gray-700'
                                     }`}
                             >
                                 {option.text}

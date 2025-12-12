@@ -48,10 +48,18 @@ const Home = () => {
     return (
         <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-20 md:py-32">
+            <section className="relative overflow-hidden bg-gradient-to-br from-wellness-teal-50 via-wellness-sky-light to-wellness-blue-50 py-20 md:py-32">
+                <div className="absolute inset-0 overflow-hidden opacity-40">
+                    <img
+                        src="/api/placeholder/1920/1080"
+                        alt="Peaceful sky background"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
-                    <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+                    <div className="absolute -top-40 -right-40 w-80 h-80 bg-wellness-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
+                    <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-wellness-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +75,7 @@ const Home = () => {
                             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
                             className="inline-block mb-6"
                         >
-                            <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl animate-float">
+                            <div className="w-20 h-20 bg-gradient-to-br from-wellness-teal-500 to-wellness-teal-600 rounded-2xl flex items-center justify-center shadow-xl">
                                 <span className="text-4xl">🧠</span>
                             </div>
                         </motion.div>
@@ -76,8 +84,12 @@ const Home = () => {
                             <span className="gradient-text">MindCheck</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                            Your mental health matters. Take the first step towards understanding and improving your mental wellness.
+                        <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto font-medium">
+                            Your Mental Wellness Journey
+                        </p>
+
+                        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                            Take the first step towards understanding and improving your mental health
                         </p>
 
                         <motion.div
@@ -169,7 +181,7 @@ const Home = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+            <section className="py-20 bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -180,12 +192,12 @@ const Home = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                             Ready to Take Control of Your Mental Health?
                         </h2>
-                        <p className="text-xl text-blue-100 mb-8">
+                        <p className="text-xl text-wellness-teal-50 mb-8">
                             Start your journey towards better mental wellness today
                         </p>
                         <button
                             onClick={() => navigate('/quiz')}
-                            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200"
+                            className="bg-white text-wellness-teal-600 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200"
                         >
                             Begin Assessment Now
                         </button>

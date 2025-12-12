@@ -144,8 +144,8 @@ const Quiz = () => {
                         onClick={handlePrevious}
                         disabled={currentQuestionIndex === 0}
                         className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${currentQuestionIndex === 0
-                                ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                             }`}
                     >
                         ← Previous
@@ -156,10 +156,10 @@ const Quiz = () => {
                             <div
                                 key={index}
                                 className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentQuestionIndex
-                                        ? 'bg-blue-600 w-8'
-                                        : answers[questions[index].id] !== undefined
-                                            ? 'bg-green-500'
-                                            : 'bg-gray-300'
+                                    ? 'bg-blue-600 w-8'
+                                    : answers[questions[index].id] !== undefined
+                                        ? 'bg-green-500'
+                                        : 'bg-gray-300'
                                     }`}
                             />
                         ))}
@@ -170,8 +170,8 @@ const Quiz = () => {
                             onClick={handleSubmit}
                             disabled={!allAnswered}
                             className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${allAnswered
-                                    ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white hover:shadow-lg'
-                                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                                ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white hover:shadow-lg'
+                                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                                 }`}
                         >
                             Submit Quiz ✓
@@ -181,8 +181,8 @@ const Quiz = () => {
                             onClick={handleNext}
                             disabled={!isAnswered}
                             className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${isAnswered
-                                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:shadow-lg'
-                                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                                ? 'bg-gradient-to-r from-wellness-teal-500 to-wellness-teal-600 text-white hover:shadow-lg'
+                                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                                 }`}
                         >
                             Next →
