@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "category": "Emergency Hotlines",
+        "name": "National Suicide Prevention Lifeline",
+        "description": "24/7 free and confidential support for people in distress",
+        "contact": "988",
+        "website": "https://988lifeline.org",
+        "country": "USA"
+    },
+    {
+        "id": 2,
+        "category": "Emergency Hotlines",
+        "name": "Crisis Text Line",
+        "description": "Free 24/7 support via text message",
+        "contact": "Text HOME to 741741",
+        "website": "https://www.crisistextline.org",
+        "country": "USA"
+    },
+    {
+        "id": 3,
+        "category": "Emergency Hotlines",
+        "name": "SAMHSA National Helpline",
+        "description": "Treatment referral and information service",
+        "contact": "1-800-662-4357",
+        "website": "https://www.samhsa.gov/find-help/national-helpline",
+        "country": "USA"
+    },
+    {
+        "id": 4,
+        "category": "Online Resources",
+        "name": "Mental Health America",
+        "description": "Screening tools and educational resources",
+        "contact": "N/A",
+        "website": "https://www.mhanational.org",
+        "country": "USA"
+    },
+    {
+        "id": 5,
+        "category": "Online Resources",
+        "name": "NAMI (National Alliance on Mental Illness)",
+        "description": "Support, education, and advocacy",
+        "contact": "1-800-950-6264",
+        "website": "https://www.nami.org",
+        "country": "USA"
+    },
+    {
+        "id": 6,
+        "category": "Online Resources",
+        "name": "Anxiety and Depression Association",
+        "description": "Resources for anxiety and depression",
+        "contact": "N/A",
+        "website": "https://adaa.org",
+        "country": "USA"
+    },
+    {
+        "id": 7,
+        "category": "Self-Help Tools",
+        "name": "Headspace",
+        "description": "Meditation and mindfulness app",
+        "contact": "N/A",
+        "website": "https://www.headspace.com",
+        "country": "Global"
+    },
+    {
+        "id": 8,
+        "category": "Self-Help Tools",
+        "name": "Calm",
+        "description": "Sleep, meditation, and relaxation",
+        "contact": "N/A",
+        "website": "https://www.calm.com",
+        "country": "Global"
+    },
+    {
+        "id": 9,
+        "category": "Professional Help",
+        "name": "Psychology Today Therapist Finder",
+        "description": "Find therapists and psychiatrists near you",
+        "contact": "N/A",
+        "website": "https://www.psychologytoday.com/us/therapists",
+        "country": "USA"
+    },
+    {
+        "id": 10,
+        "category": "Professional Help",
+        "name": "BetterHelp",
+        "description": "Online therapy and counseling",
+        "contact": "N/A",
+        "website": "https://www.betterhelp.com",
+        "country": "Global"
+    }
+]

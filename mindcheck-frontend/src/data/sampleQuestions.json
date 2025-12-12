@@ -1,0 +1,232 @@
+[
+    {
+        "id": 1,
+        "text": "Over the last 2 weeks, how often have you felt down, depressed, or hopeless?",
+        "category": "mood",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "How often have you had little interest or pleasure in doing things?",
+        "category": "mood",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "How often have you felt nervous, anxious, or on edge?",
+        "category": "anxiety",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "How often have you been unable to stop or control worrying?",
+        "category": "anxiety",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "How often have you had trouble falling or staying asleep?",
+        "category": "sleep",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "How often have you felt tired or had little energy?",
+        "category": "energy",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "text": "How often have you had poor appetite or been overeating?",
+        "category": "appetite",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "text": "How often have you felt bad about yourself or that you're a failure?",
+        "category": "self-esteem",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "How often have you had trouble concentrating on things?",
+        "category": "concentration",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "text": "How often have you felt restless or found it hard to sit still?",
+        "category": "restlessness",
+        "options": [
+            {
+                "text": "Not at all",
+                "value": 0
+            },
+            {
+                "text": "Several days",
+                "value": 1
+            },
+            {
+                "text": "More than half the days",
+                "value": 2
+            },
+            {
+                "text": "Nearly every day",
+                "value": 3
+            }
+        ]
+    }
+]
